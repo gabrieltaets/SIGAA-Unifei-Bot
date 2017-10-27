@@ -10,47 +10,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from telegram.error import (TelegramError, Unauthorized, BadRequest, TimedOut, ChatMigrated, NetworkError)
 import time
-updater = Updater(token='368870222:AAGRbVKinuEFHV8axnTLma6iHk2RAzaVk1E')
+
+updater = Updater(token='')
 
 dispatcher = updater.dispatcher
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 updater.start_polling()
-
-def error_callback(bot, update, error):
-    try:
-        raise error
-    except Unauthorized as inst:
-    	print(type(inst))
-    	print(inst.args)
-    	print(inst)
-        # remove update.message.chat_id from conversation list
-    except BadRequest as inst:
-    	print(type(inst))
-    	print(inst.args)
-    	print(inst)
-        # handle malformed requests - read more below!
-    except TimedOut as inst:
-    	print(type(inst))
-    	print(inst.args)
-    	print(inst)
-        # handle slow connection problems
-    except NetworkError as inst:
-    	print(type(inst))
-    	print(inst.args)
-    	print(inst)
-        # handle other connection problems
-    except ChatMigrated as inst:
-    	print(type(inst))
-    	print(inst.args)
-    	print(inst)
-        # the chat_id of a group has changed, use e.new_chat_id instead
-    except TelegramError as inst:
-    	print(type(inst))
-    	print(inst.args)
-    	print(inst)
-        # handle all other telegram related errors
-
-dispatcher.add_error_handler(error_callback)
 
 def start(bot, update):
 	bot.send_message(chat_id=update.message.chat_id, text="Olá, eu sou o SIGAA Bot!\nDigite /notas usuario senha e eu lhe enviarei suas notas!\nNão se preocupe - seus dados não são guardados!\nSe você gosta do SIGAA Bot, por favor deixe sua avaliação: https://telegram.me/storebot?start=SIGAA_Bot")
@@ -86,7 +51,7 @@ def notas(bot, update, args):
 		notas.click()
 		driver.save_screenshot(""+USERLOGIN+".png")
 		bot.send_photo(chat_id=update.message.chat_id, photo=open(""+USERLOGIN+".png","rb"), caption="Aqui estão suas notas!")
-		#bot.send_photo(chat_id=update.message.chat_id, photo=open(""+USERLOGIN+".png","rb"), caption="Aqui estão suas notas!")
+		os.remove(""+USERLOGIN+".png")
 	except:
 		bot.send_message(chat_id=update.message.chat_id, text="Sinto muito, não consegui recuperar suas notas!\nTalvez seus dados estejam incorretos, ou o SIGAA está fora do ar!")
 	driver.quit()
