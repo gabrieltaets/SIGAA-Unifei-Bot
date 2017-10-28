@@ -8,8 +8,8 @@ O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram e do Sel
 
 * */start* --  Configuração do SIGAA Unifei Bot
 * */help* -- Exibe os comandos
-* */notas <usuário> <senha>* -- Retorna uma imagem com as notas atuais do usuário no SIGAA. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
-* */disc <sigla> <usuário> <senha>* -- Retorna uma imagem com as notas da disciplina na turma virtual. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
+* */notas <usuário> <senha> * -- Retorna uma imagem com as notas atuais do usuário no SIGAA. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
+* */disc <sigla> <usuário> <senha> * -- Retorna uma imagem com as notas da disciplina na turma virtual. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
   
 ## Em breve
 
