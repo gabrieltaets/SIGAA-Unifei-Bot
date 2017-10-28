@@ -17,3 +17,8 @@ O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram e do Sel
 
 
 ### Desenvolvido por Gabriel Taets (gabrieltaets at gmail.com)
+
+
+#### Ajude a manter o SIGAA Bot:
+
+[![paypal](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NX6B7Z6GQCRH2)
