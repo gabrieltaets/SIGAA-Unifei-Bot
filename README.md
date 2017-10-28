@@ -4,16 +4,16 @@ Este Bot para Telegram (@SIGAA_Bot) foi criado para auxiliar os alunos da Univer
 
 O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram e do Selenium.
 
-Nenhuma senha é armazenada.
-
 ## Comandos úteis
 
-* */start* --  Mensagem de boas-vindas
-* */notas usuário senha* -- Retorna uma imagem com as notas atuais do usuário no SIGAA.
-
+* */start* --  Configuração do SIGAA Unifei Bot
+* */help* -- Exibe os comandos
+* */notas <usuário> <senha>* -- Retorna uma imagem com as notas atuais do usuário no SIGAA. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
+* */disc <sigla> <usuário> <senha>* -- Retorna uma imagem com as notas da disciplina na turma virtual. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
+  
 ## Em breve
 
-* Visualização de notas por disciplinas
-* Armazenamento de dados
+* Comando para enviar sugestões, elogios, críticas ou perguntas
+
 
 ### Desenvolvido por Gabriel Taets (gabrieltaets at gmail.com)
