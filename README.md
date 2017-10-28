@@ -14,7 +14,7 @@ O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram e do Sel
 ## Em breve
 
 * Comando para enviar sugestões, elogios, críticas ou perguntas
-
+* Verificação de novas notas (O Bot irá te avisar quando uma nova nota for postada!)
 
 ### Desenvolvido por Gabriel Taets (gabrieltaets at gmail.com)
 
@@ -22,3 +22,5 @@ O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram e do Sel
 #### Ajude a manter o SIGAA Bot:
 
 [![paypal](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NX6B7Z6GQCRH2)
+
+
