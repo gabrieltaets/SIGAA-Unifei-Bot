@@ -15,10 +15,6 @@ O Bot agora oferece opção para salvar suas informações no banco de dados (op
 * */freq \<sigla\> \<usuário\> \<senha\>* -- Retorna uma imagem com a frequência na disciplina. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
 * */feedback \<mensagem\>* -- Envia uma mensagem para o desenvolvedor
 
-## Em breve
-
-* Verificação de novas notas (O Bot irá te avisar quando uma nova nota for postada!)
-
 ### Desenvolvido por Gabriel Taets (gabrieltaets at gmail.com)
 
 
