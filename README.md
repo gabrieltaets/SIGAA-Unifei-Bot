@@ -2,7 +2,9 @@
 
 Este Bot para Telegram (@SIGAA_Bot) foi criado para auxiliar os alunos da Universidade Federal de Itajubá a visualizarem suas notas no sistema da universidade.
 
-O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram e do Selenium.
+O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram, Selenium, Pillow e Xvbf.
+
+O Bot agora oferece opção para salvar suas informações no banco de dados (opcional). Todas as senhas são encriptadas.
 
 ## Comandos úteis
 
@@ -10,10 +12,11 @@ O Bot foi desenvolvido em Python 3, com o auxílio das APIs do telegram e do Sel
 * */help* -- Exibe os comandos
 * */notas \<usuário\> \<senha\>* -- Retorna uma imagem com as notas atuais do usuário no SIGAA. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
 * */disc \<sigla\> \<usuário\> \<senha\>* -- Retorna uma imagem com as notas da disciplina na turma virtual. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
-  
+* */freq \<sigla\> \<usuário\> \<senha\>* -- Retorna uma imagem com a frequência na disciplina. Usuário e Senha podem ser omitidos caso você tenha optado por salvar as informações.
+* */feedback \<mensagem\>* -- Envia uma mensagem para o desenvolvedor
+
 ## Em breve
 
-* Comando para enviar sugestões, elogios, críticas ou perguntas
 * Verificação de novas notas (O Bot irá te avisar quando uma nova nota for postada!)
 
 ### Desenvolvido por Gabriel Taets (gabrieltaets at gmail.com)
